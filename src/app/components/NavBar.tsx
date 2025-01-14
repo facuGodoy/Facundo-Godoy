@@ -120,7 +120,6 @@ const NavBar = () => {
       <section className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
-          {/* <CustomLink href="/about" title="About" className="mx-4" /> */}
           <CustomLink href="/projects" title="Projects" className="mx-4" />
           <CustomLink href="/article" title="Article" className="ml-4" />
           <button></button>
