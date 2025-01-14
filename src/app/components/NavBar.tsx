@@ -203,12 +203,6 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
-              href="/article"
-              title="Article"
-              className=""
-              toggle={handleClick}
-            />
             <button></button>
           </nav>
 
