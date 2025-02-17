@@ -110,6 +110,8 @@ const Education = () => {
                 Certificado
               </a>
             }
+            place="Curso online CODERHOUSE - Carrera Front-End"
+            info="en el siguiente link se certifica la finalización de la carrera Front-End"
           />
           <Details
             type="Curso TypeScript"
