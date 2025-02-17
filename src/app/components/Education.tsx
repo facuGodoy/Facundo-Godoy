@@ -110,6 +110,7 @@ const Education = () => {
                 Certificado
               </a>
             }
+            time="Mayo - 2024 | Septiembre - 2024"
             place="Curso online CODERHOUSE - Carrera Front-End"
             info="en el siguiente link se certifica la finalización de la carrera Front-End"
           />
