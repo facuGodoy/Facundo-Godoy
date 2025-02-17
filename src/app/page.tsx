@@ -43,7 +43,7 @@ export default function Home() {
               </div>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="https://i.postimg.cc/YS3wFrn6/GODOY-FACUNDO.png"
+                  href="/public/GODOY FACUNDO.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light/90 hover:dark:text-light/90 text-lg font-semibold p-3 px-4 rounded-xl hover:bg-light hover:text-dark hover:border-dark border-2 border-solid border-transparent md:p-2 md:px-4 md:text-base"
                   download={true}
