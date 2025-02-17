@@ -6,9 +6,9 @@ import LiIcon from "./LiIcon";
 
 interface DetailsProps {
   type: string;
-  time: string;
-  place: string;
-  info: string;
+  time?: string;
+  place?: string;
+  info?: string;
   link: ReactElement;
 }
 
@@ -32,7 +32,9 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info, link }) => {
           {time} | {place}
         </span>
         <p className="font-medium w-full md:text-sm">{info}</p>
-        <button className="font-mono text-sm text-primary mt-2 sm:mt-1 sm:text-xl xs:text-lg  dark:text-yellow-100 ">{link}</button>
+        <button className="font-mono text-sm text-primary mt-2 sm:mt-1 sm:text-xl xs:text-lg  dark:text-yellow-100 ">
+          {link}
+        </button>
       </motion.div>
     </li>
   );
@@ -59,34 +61,80 @@ const Education = () => {
           <Details
             type="Curso de HTML y CSS3"
             time="Abril - 2022"
-            link={<a href="https://www.coderhouse.com/ar/certificados/62916ef18aab83001a521df5?lang=es" target="_blank">Certificado</a>}
+            link={
+              <a
+                href="https://pub.coderhouse.com/legacy-certificates/62916ef18aab83001a521df5?lang=es"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
             place="Curso online CODERHOUSE - Carrera Front-End"
             info="Aprendizaje de lo básico de HTML y CSS3, para poder crear páginas web dinámicas y atractivas."
           />
           <Details
             type="Curso de JavaScript"
-            link={<a href="https://www.coderhouse.com/ar/certificados/62e60e84a623b60024da791f?lang=es" target="_blank">Certificado</a>}
+            link={
+              <a
+                href="https://pub.coderhouse.com/legacy-certificates/62e60e84a623b60024da791f?lang=es"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
             time="Julio - 2022"
             place="Curso online CODERHOUSE - Carrera Front-End"
             info="Aprendiendo conceptos básicos de JavaScript, para poder crear páginas web dinámicas y atractivas, usando ES6 y vanillaJs."
           />
           <Details
             type="Curso ReactJs"
-            link={<a href="https://www.coderhouse.com/ar/certificados/634f54143b3c0d000f00f2a0?lang=es" target="_blank">Certificado</a>}
+            link={
+              <a
+                href="https://pub.coderhouse.com/legacy-certificates/634f54143b3c0d000f00f2a0?lang=es"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
             time="Septiembre - 2022"
             place="Curso online CODERHOUSE - Carrera Front-End"
             info="Curso en el cual te enseñaran todo lo que necesitas saber para poder crear aplicaciones web con ReactJs y distintos Frameworks."
           />
           <Details
+            type="Certificado Carrera Front-End"
+            link={
+              <a
+                href="https://pub.coderhouse.com/legacy-certificates/634f54153b3c0d000f00f2a3?lang=es"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
+          />
+          <Details
             type="Curso TypeScript"
-            link={<a href="https://i.postimg.cc/NGxtmVRB/Certificado-Type-Script.png" target="_blank">Certificado</a>}
+            link={
+              <a
+                href="https://i.postimg.cc/NGxtmVRB/Certificado-Type-Script.png"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
             time="Mayo - 2024"
             place="Curso online de Fernando Herrera - Udemy"
             info="Curso en el cual te enseñaran todo sobre el uso de typescript en el desarrollo de aplicaciones web y también aprenderás a usar el framework."
           />
           <Details
             type="Curso Software Testing"
-            link={<a href="https://i.postimg.cc/pXLzfw5H/UC-6ca506a9-d0f6-40fe-b4d9-4049aaaa8f88.png" target="_blank">Certificado</a>}
+            link={
+              <a
+                href="https://i.postimg.cc/pXLzfw5H/UC-6ca506a9-d0f6-40fe-b4d9-4049aaaa8f88.png"
+                target="_blank"
+              >
+                Certificado
+              </a>
+            }
             time="Agosto - 2024"
             place="Curso online de Esteban Balvin - Udemy"
             info="Curso en el cual te enseñaran aprende sobre pruebas ágiles, APIs, automatización con Selenium, Cypress, y más."

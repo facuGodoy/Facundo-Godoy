@@ -51,6 +51,8 @@ const Skills = () => {
         <Skill name="MUI" x="-10vw" y="0vw" />
         <Skill name="Mongo" x="10vw" y="0vw" />
         <Skill name="NodeJs" x="-12vw" y="-6vw" />
+        <Skill name="ReactNative - Expo" x="-25vw" y="2vw" />
+        <Skill name="TanStack" x="25vw" y="2vw" />
       </section>
     </>
   );
